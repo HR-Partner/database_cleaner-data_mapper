@@ -1,6 +1,6 @@
 require 'database_cleaner/spec/database_helper'
-require "data_mapper"
-require "dm-sqlite-adapter"
+require "dm-types"
+# require "dm-sqlite-adapter"
 
 class DataMapperHelper < DatabaseCleaner::Spec::DatabaseHelper
   def setup
@@ -33,4 +33,3 @@ class DataMapperHelper < DatabaseCleaner::Spec::DatabaseHelper
     DataMapper.setup(:default, config)
   end
 end
-
